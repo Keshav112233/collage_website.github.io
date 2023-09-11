@@ -1,0 +1,263 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+/* header section  */
+.header{
+    background-image: linear-gradient(rgba(4, 9, 30, 0.6),rgba(4,9, 30, 0.4)),url(banner.png);
+    min-height: 100vh;
+    background-size: cover;
+    background-position: center; 
+    position: relative; 
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+nav img{
+    width: 150px;
+}
+.nav-links{
+    text-align: right;
+    
+}
+.nav-links ul li{
+    list-style: none;
+    display: inline-block;
+    margin-left: 18px;
+   position: relative;
+   bottom: 8px;
+}
+.nav-links ul li a{
+    text-decoration: none;
+    color: white;
+}
+.nav-links ul li a:hover{
+    color: rgb(181, 196, 176);
+}
+.text-box{
+    position: absolute;
+    width: 90%;
+    top: 40%;
+    left: 4%;
+    text-align: center;
+    color: white;
+}
+.text-box h1{
+    font-size: 60px;
+    text-shadow:2px 2px 3px rgb(226, 159, 2);
+}
+.text-box p{
+    margin-top: 12px;
+    font-size: 20px;
+}
+.text-box a{
+    margin-top: 15px;
+}
+.btn{
+    text-decoration: none;
+    display: inline-block;
+    border: 1.8px solid  white;
+    color: white;
+    padding: 7px 10px;
+    font-size: 17px;
+    border-radius: 30px;
+}
+.btn:hover{
+    background-color: rgb(136, 154, 154);
+    border: 1.8px solid rgb(5, 5, 62);
+    transition-duration: 1s;
+}
+
+/* course section  */
+.course{
+    width: 85%;
+    margin: auto;
+    text-align: center;
+    padding-top: 70px;
+}
+.course h1{
+
+    font-size: 35px;
+    font-weight: 700px;
+}
+.col-h{
+   opacity: 0;
+
+}
+.course p{
+    font-size: 20px;
+    font-weight: 250px;
+    padding: 10px;
+    line-height: 35px;
+}
+
+.row{
+    display: flex;
+    gap: 40px;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+.course-col{
+    background-color: antiquewhite;
+    border-radius: 30px;
+    padding: 20px 12px 0px 12px;
+    transition: 0.7s;
+}
+.course-col:hover{
+    box-shadow: 1px 1px 25px 1px black;
+}
+.campus-col:hover .col-h{
+    opacity: 1;
+    transform: translateY(16rem);
+    transition: 1s;
+}
+
+/* campus section  */
+.campus{
+    width: 85%;
+    margin: auto;
+    padding-top: 50px;
+    text-align: center;
+}
+.campus h1{
+    margin-top: 45px;
+}
+.campus p{
+    margin-top: 24px;
+    font-size:20px;
+}
+.campus-col{
+    margin-top: 25px;
+   width: 30%;
+   background-color: transparent;
+}
+.bg-image{
+    height: 600px;
+    background-size: cover;
+    border-radius: 20px;
+    margin-bottom: 30px;
+    transition: 0.5s;
+}
+.border:hover{
+    box-shadow: 1px 1px 35px 1px rgb(4, 57, 171);
+}
+.bg-image h1{
+    padding-top: 10px;
+}
+
+/* facilities section  */
+.fac{
+    width: 85%;
+    margin: auto;
+    text-align: center;
+    padding-top: 90px;
+}
+.fac p{
+    font-size: 20px;
+    padding-top: 20px;
+    padding-bottom: 30px;
+}
+.fac-col{
+    width: 30%;
+}
+.fac-col img{
+    height: 400px;
+    border-radius: 30px;
+    width: 100%;
+    transition: 0.5s;
+}
+.fac h2{
+    padding-top: 20px;
+}
+.fac-col p{
+    padding-top: 10px;
+    line-height: 28px;
+}
+
+/* testimonials session  */
+.test{
+    width: 85%;
+    margin: auto;
+    text-align: center;
+    padding-top: 70px;
+}
+.test-col img{
+    height: 60px;
+    width: 100px;
+    border-radius: 50%;
+   padding-left: 10px;
+}
+.test-col{
+    height: 155px;
+    display: flex;
+    background-color: rgb(212, 234, 234);
+    border-radius: 30px;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+    transition: 0.5s;
+}
+.test-col p{
+    text-align: justify;
+    padding: 0px 30px;
+    line-height: 28px;
+    font-size: 17px;
+}
+.test-col h3{
+    padding-top: 8px;
+}
+.test-p{
+    padding-top:25px;
+    font-size: 20px;
+}
+
+/* call to action  */
+.cta{
+    width: 85%;
+    margin: 100px auto;
+    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url('banner2.jpg');
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    border-radius: 30px;
+    height: 400px;
+    transition: 0.5s;
+}
+.cta h1{
+    color: white;
+    padding-top: 150px;
+}
+.btn-2{
+    display: inline-block;
+    background-color: rgb(86, 76, 76);
+    margin-top: 30px;
+    border-radius: 20px;
+    color: white;
+    text-decoration: none;
+    font-size: 30px;
+    padding: 10px 10px;
+    transition: 0.5s;
+}
+
+/* footer section  */
+.footer{
+    width: 100%;
+    padding: 40px 0px;
+    text-align: center;
+}
+.footer h4{
+    margin-top: -50px;
+    font-size: 40px;
+}
+.footer p{
+    padding-top: 30px;
+    font-size: 20px;
+    line-height: 30px;
+}
+
